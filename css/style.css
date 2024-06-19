@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: #000;
+}
+.btn a{
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 70px;
+    background: linear-gradient(115deg,#7999f3,#a1ee82,#ed5787,#c4e95d,#35abf0);
+    text-align: center;
+    border-radius: 7px;
+}
+.btn a span{
+    display: block;
+    position: absolute;
+    width: 96%;
+    height: 88%;
+    background: #111;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 6px;
+    line-height: 62px;
+    color: #f5f5f5;
+    font-size: 20px;
+}
+.btn a:hover{
+    animation: animate 0.4s linear infinite;
+}
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
